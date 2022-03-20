@@ -8,35 +8,15 @@ import { Product } from './models/product.model';
 })
 export class AppComponent {
   imgParent = '';
-  products: Product[] = [
-    {
-      id: '1',
-      name: 'EL mejor juguete',
-      price: 565,
-      image: './assets/images/toy.webp'
-    },
-    {
-      id: '2',
-      name: 'Bicicleta casi nueva',
-      price: 356,
-      image: './assets/images/bike.webp'
-    },
-    {
-      id: '3',
-      name: 'Colleción de albumnes',
-      price: 34,
-      image: './assets/images/album.webp'
-    },
-    {
-      id: '4',
-      name: 'Mis libros',
-      price: 23,
-      image: './assets/images/books.webp'
-    }
-  ];
+  showImg = true;
+  
 
   onLoaded(img: string){
     console.log('log padre : ', img);
+  }
+
+  toggleImg(){
+    this.showImg = !this.showImg;
   }
 
 }
