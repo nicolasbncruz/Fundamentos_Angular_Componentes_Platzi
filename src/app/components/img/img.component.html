@@ -1,5 +1,5 @@
 
-<img width="200" [src]="img" alt="" *ngIf="img; else elseImg" >
+<img width="200" (error)="imgError()" [src]="img" alt="" *ngIf="img; else elseImg" >
 <ng-template #elseImg>
-  <img src="./assets/images/default.jpg" alt="">
+  <img [src]="imageDefault" width="200" alt="">
 </ng-template>

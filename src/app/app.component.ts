@@ -8,6 +8,7 @@ import { Product } from './models/product.model';
 })
 export class AppComponent {
   imgParent = 'https://www.w3schools.com/howto/img_avatar.png';
+
   products: Product[] = [
     {
       id: '1',

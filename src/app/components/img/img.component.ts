@@ -9,10 +9,16 @@ import { Component, OnInit, Input, Output, EventEmitter, OnChanges, SimpleChange
 export class ImgComponent implements OnInit {
 
 
-  @Input() img: string = 'valor inicial';
+  @Input() img: string = '';
+
+  imageDefault = './assets/images/default.jpg';
 
     ngOnInit(): void {
 
+    }
+
+    imgError(){
+      this.img = this.imageDefault;
     }
 
 
