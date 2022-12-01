@@ -2,6 +2,11 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.2.3.
 
+https://yarnstore-81ab3.web.app/
+
+![store componentes](https://user-images.githubusercontent.com/24864482/175091812-3e116f8e-7e3c-4b4b-8df3-674f2e2ac9c1.png)
+
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.

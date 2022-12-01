@@ -1,13 +1,13 @@
-import { Component } from '@angular/core';
-import { Product } from './models/product.model';
+import { Component, OnInit } from '@angular/core';
+import { Product } from 'src/app/models/product.model';
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+  selector: 'app-products',
+  templateUrl: './products.component.html',
+  styleUrls: ['./products.component.scss']
 })
-export class AppComponent {
-  imgParent = 'https://www.w3schools.com/howto/img_avatar.png';
+export class ProductsComponent implements OnInit {
+
   products: Product[] = [
     {
       id: '1',
@@ -34,16 +34,10 @@ export class AppComponent {
       image: './assets/images/books.webp'
     }
   ];
-  showImg = true;
 
+  constructor() { }
 
-
-  onLoaded(img: string){
-    console.log('log padre : ', img);
-  }
-
-  toggleImg(){
-    this.showImg = !this.showImg;
+  ngOnInit(): void {
   }
 
 }

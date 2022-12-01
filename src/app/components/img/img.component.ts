@@ -1,4 +1,5 @@
-import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter, OnChanges, SimpleChanges, AfterViewInit, OnDestroy } from '@angular/core';
+
 
 @Component({
   selector: 'app-img',
@@ -7,15 +8,15 @@ import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 })
 export class ImgComponent implements OnInit {
 
+
   @Input() img: string = 'valor inicial';
 
+    ngOnInit(): void {
 
-  ngOnInit(): void {
+    }
+
+
   }
-
-
-
-}
 
 
 /**
