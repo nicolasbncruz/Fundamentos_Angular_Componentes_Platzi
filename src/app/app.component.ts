@@ -7,7 +7,7 @@ import { Product } from './models/product.model';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  imgParent = '';
+  imgParent = 'https://www.w3schools.com/howto/img_avatar.png';
   products: Product[] = [
     {
       id: '1',
