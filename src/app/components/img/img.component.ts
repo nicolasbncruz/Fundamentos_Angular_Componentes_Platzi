@@ -11,6 +11,8 @@ export class ImgComponent implements OnInit {
 
   @Input() img: string = '';
 
+  @Output() loaded = new EventEmitter<String>();
+
   imageDefault = './assets/images/default.jpg';
 
     ngOnInit(): void {
@@ -19,6 +21,11 @@ export class ImgComponent implements OnInit {
 
     imgError(){
       this.img = this.imageDefault;
+    }
+
+    imgLoad(){
+      console.log("log hijo...");
+      this.loaded.emit(this.img);
     }
 
 

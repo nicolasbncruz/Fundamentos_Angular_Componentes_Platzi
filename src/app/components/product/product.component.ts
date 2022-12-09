@@ -8,6 +8,12 @@ import { Product } from 'src/app/models/product.model';
 })
 export class ProductComponent implements OnInit {
 
+  product = {
+    name: 'Product 1',
+    image: './assets/images/toy.webp',
+    price: '100'
+  }
+
   constructor() { }
 
   ngOnInit(): void {

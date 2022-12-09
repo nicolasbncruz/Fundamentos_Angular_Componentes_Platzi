@@ -1,6 +1,6 @@
 <p>Url Image Father: <input type="text" [(ngModel)]="imgParent" /> </p>
-
-<!--Call componente Hijo-->
-<app-img [img]="imgParent"></app-img>
+<app-img
+  (loaded)="onLoaded($event)"
+  [img]="imgParent"></app-img>
 
 <app-product></app-product>

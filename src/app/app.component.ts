@@ -7,9 +7,13 @@ import { Product } from './models/product.model';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  imgParent = 'https://www.w3schools.com/howto/img_avatar.png';
+  imgParent = '';
 
-  products: Product[] = [
+  onLoaded(img: String){
+    console.log('log padre : ', img);
+  }
+
+  /*products: Product[] = [
     {
       id: '1',
       name: 'EL mejor juguete',
@@ -38,13 +42,8 @@ export class AppComponent {
   showImg = true;
 
 
-
-  onLoaded(img: string){
-    console.log('log padre : ', img);
-  }
-
   toggleImg(){
     this.showImg = !this.showImg;
-  }
+  }*/
 
 }
