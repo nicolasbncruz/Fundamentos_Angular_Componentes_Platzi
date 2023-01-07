@@ -8,10 +8,12 @@ import { Component, OnInit, Input, Output, EventEmitter, OnChanges, SimpleChange
 })
 export class ImgComponent implements OnInit {
 
+// se agrega en el hijo RECIBE UN VALOR DEL PADRE
+  @Input()
+  img: string = '';
 
-  @Input() img: string = '';
-
-  @Output() loaded = new EventEmitter<String>();
+  @Output()
+  loaded = new EventEmitter<String>();
 
   imageDefault = './assets/images/default.jpg';
 

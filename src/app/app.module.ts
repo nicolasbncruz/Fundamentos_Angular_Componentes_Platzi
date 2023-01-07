@@ -17,7 +17,7 @@ import { NavComponent } from './components/nav/nav.component';
     ProductsComponent,
     NavComponent
   ],
-  imports: [
+  imports: [// AQUI SE IMPORTAN LOS MODULOS
     BrowserModule,
     AppRoutingModule,
     FormsModule
