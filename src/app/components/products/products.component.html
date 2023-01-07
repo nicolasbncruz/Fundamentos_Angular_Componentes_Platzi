@@ -1,3 +1,6 @@
 <div class="products--grid">
-    <app-product></app-product>
+  <app-product
+    [productSon]="product"
+    *ngFor="let product of products"
+  ></app-product>
 </div>

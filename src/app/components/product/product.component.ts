@@ -8,10 +8,12 @@ import { Product } from 'src/app/models/product.model';
 })
 export class ProductComponent implements OnInit {
 
-  product = {
-    name: 'Product 1',
-    image: './assets/images/toy.webp',
-    price: '100'
+  @Input()
+  productSon: Product = {
+    id:'',
+    name:'',
+    price:0,
+    image:''
   }
 
   constructor() { }
