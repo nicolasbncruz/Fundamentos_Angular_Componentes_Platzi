@@ -4,8 +4,19 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 https://yarnstore-81ab3.web.app/
 
-![store componentes](https://user-images.githubusercontent.com/24864482/175091812-3e116f8e-7e3c-4b4b-8df3-674f2e2ac9c1.png)
+## Api Consumir: 
+https://young-sands-07814.herokuapp.com/api/products
 
+## Swagger Api document:
+https://young-sands-07814.herokuapp.com/docs/#/products/ProductsController_getAll
+
+## fakestoreapi.com:
+https://fakestoreapi.com/products
+
+## fakestoreapi.com documentation:
+https://fakestoreapi.com/docs
+
+![store componentes](https://user-images.githubusercontent.com/24864482/175091812-3e116f8e-7e3c-4b4b-8df3-674f2e2ac9c1.png)
 
 ## Development server
 
