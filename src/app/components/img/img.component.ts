@@ -19,6 +19,7 @@ export class ImgComponent implements OnInit, OnChanges, AfterViewInit, OnDestroy
   img: string = '';
 
   // se agrega en el hijo RECIBE UN VALOR DEL PADRE
+  // eslint-disable-next-line @angular-eslint/no-input-rename
   @Input('img')
   set changeImg(newImg: string) {
     this.img = newImg;
